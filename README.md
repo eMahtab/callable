@@ -1,5 +1,11 @@
 # Callable
 
+```java
+public interface Callable<V> {
+    V call() throws Exception;
+}
+```
+
 #### Callable vs. Runnable
 The Java Callable interface is similar to the Java Runnable interface, in that both of them represents a task that is intended to be executed concurrently by a separate thread.
 
