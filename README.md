@@ -1,5 +1,12 @@
 # Callable
 
+#### Callable vs. Runnable
+The Java Callable interface is similar to the Java Runnable interface, in that both of them represents a task that is intended to be executed concurrently by a separate thread.
+
+A Java Callable is different from a Runnable in that the Runnable interface's run() method does not return a value, and it cannot throw checked exceptions (only RuntimeExceptions).
+
+Additionally, a Runnable was originally designed for long running concurrent execution, e.g. running a network server concurrently, or watching a directory for new files. The Callable interface is more designed for one-off tasks that return a single result.
+
 ```java
 import java.util.ArrayList;
 import java.util.List;
