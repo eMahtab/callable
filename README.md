@@ -1,4 +1,5 @@
 # Callable
+The Callable interface was introduced in Java 1.5 as part of the java.util.concurrent package. It was created to address limitations of the Runnable interface.
 
 ```java
 public interface Callable<V> {
@@ -11,7 +12,7 @@ The Java Callable interface is similar to the Java Runnable interface, in that b
 
 A Java Callable is different from a Runnable in that the Runnable interface's run() method does not return a value, and it cannot throw checked exceptions (only RuntimeExceptions).
 
-Additionally, a Runnable was originally designed for long running concurrent execution, e.g. running a network server concurrently, or watching a directory for new files. The Callable interface is more designed for one-off tasks that return a single result.
+**Additionally, a Runnable was originally designed for long running concurrent execution, e.g. running a network server concurrently, or watching a directory for new files. The Callable interface is more designed for one-off tasks that return a single result.**
 
 ```java
 import java.util.ArrayList;
