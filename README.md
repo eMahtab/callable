@@ -1,5 +1,5 @@
 # Callable
-The Callable interface was introduced in Java 1.5 as part of the java.util.concurrent package. It was created to address limitations of the Runnable interface.
+**The Callable interface was introduced in Java 1.5 as part of the java.util.concurrent package.** It was created to address limitations of the Runnable interface.
 
 ```java
 public interface Callable<V> {
